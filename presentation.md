@@ -57,16 +57,16 @@ Does the world really need **MORE** NumPy tutorials?!
 
 Casting
 
-```{code-cell}
+```{code-cell} ipython3
 import numpy as np
 a = np.array([1.0, 5.2])
 ```
 
-```{code-cell}
+```{code-cell} ipython3
 a.astype(np.float32)
 ```
 
-```{code-cell}
+```{code-cell} ipython3
 a.astype(np.int)
 ```
 
@@ -76,7 +76,7 @@ a.astype(np.int)
 
 Random number generation
 
-```{code-cell}
+```{code-cell} ipython3
 np.random.random((1000, 1000))
 ```
 
@@ -85,7 +85,7 @@ np.random.random((1000, 1000))
 [New random API](https://numpy.org/devdocs/reference/random/new-or-different.html)
 introduced in v1.17
 
-```{code-cell}
+```{code-cell} ipython3
 rng = np.random.default_rng()
 rng.random((1000, 1000))
 ```
@@ -96,7 +96,7 @@ rng.random((1000, 1000))
 
 Partitioning domains
 
-```{code-cell}
+```{code-cell} ipython3
 a = np.arange(0, 5, 0.2)
 a
 ```
@@ -105,7 +105,7 @@ a
 
 ```{code-cell}
 a = np.arange(1250, 1350.005, 0.005)
-a[-1]
+a
 ```
 
 +++ {"slideshow": {"slide_type": "slide"}}
@@ -152,8 +152,7 @@ But what about code review...
 +++ {"slideshow": {"slide_type": "fragment"}}
 
 - JSON format of `.ipynb` files, intended for browsers not humans
-  * Inconvenient for code review: diffs are cluttered, hard to separate
-    content changes from metadata, etc.
+  * Cluttered diffs, hard to separate content changes from metadata, etc.
 
 +++ {"slideshow": {"slide_type": "fragment"}}
 
